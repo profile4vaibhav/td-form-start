@@ -80,4 +80,31 @@
       </form>
     </div>
   </div>
+  <hr>
+  <div class="row" *ngIf="submitted">
+    <div class="col-xs-12">
+      <h3>Your Data</h3>
+      <p>Username: {{ user.username }}</p>
+      <p>Mail: {{ user.email }}</p>
+      <p>Secret Question: {{ user.secretQuestion }}</p>
+      <p>Answer: {{ user.answer }}</p>
+      <p>Gender: {{ user.gender }}</p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <!-- <app-home></app-home> -->
+  <ul>
+    <li>Add a form with the following Inputs and validators</li>
+    <li>Mail address should not be empty and should be an email address</li>
+    <li>Add a dropdown which allows user to select from 3 diff values => Basic, Advanced, Pro</li>
+    <li>Set Advanced as default</li>
+    <li>A password field should not be an empty field</li>
+    <li>A submit button</li>
+    <li>Display warning message if the form is invalid and was touched</li>
+    <li>display warning message below each input if it's invalid</li>
+    <li>Upon submitting the form, display the value of the form to the console</li>
+    <li>Optionally, display it in your template</li>
+  </ul>
 </div>
